@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'todo_creation_page.dart';
 class InboxPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,9 +11,21 @@ class InboxPage extends StatelessWidget {
         ),
         title: Text('Inbox'),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.search), onPressed: () {},),
-          IconButton(icon: Icon(Icons.more_vert), onPressed: () {},)
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.more_vert),
+            onPressed: () {},
+          )
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          Navigator.of(context).pushNamed(TodoCreationPage.routeName);
+        },
       ),
     );
   }
