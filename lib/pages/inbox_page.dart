@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'todo_creation_page.dart';
+import 'todo_edit_page.dart';
 class InboxPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class InboxPage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-          Navigator.of(context).pushNamed(TodoCreationPage.routeName);
+          Navigator.of(context).pushNamed(TodoEditPage.routeName);
         },
       ),
     );

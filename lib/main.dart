@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todoist_clone/pages/todo_creation_page.dart';
+import './pages/todo_edit_page.dart';
 import './pages/inbox_page.dart';
 import './utility/color_generator.dart';
 void main() => runApp(MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         ),
       routes: {
         '/': (ctx) => InboxPage(),
-        TodoCreationPage.routeName: (ctx) => TodoCreationPage(),
+        TodoEditPage.routeName: (ctx) => TodoEditPage(),
       },
     );
   }

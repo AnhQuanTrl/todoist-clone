@@ -3,13 +3,13 @@ import 'package:todoist_clone/widgets/recurrence_mode_radio.dart';
 import '../models/todo.dart';
 import 'package:intl/intl.dart';
 
-class TodoCreationPage extends StatefulWidget {
+class TodoEditPage extends StatefulWidget {
   static const routeName = "/edit-todo";
   @override
-  _TodoCreationPageState createState() => _TodoCreationPageState();
+  _TodoEditPageState createState() => _TodoEditPageState();
 }
 
-class _TodoCreationPageState extends State<TodoCreationPage> {
+class _TodoEditPageState extends State<TodoEditPage> {
   var _recurrence = false;
   var _titleController = TextEditingController();
   var _recurrenceMode = RecurrenceMode.EVERY_DAY;
