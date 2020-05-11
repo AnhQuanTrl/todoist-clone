@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 enum RecurrenceMode {
@@ -12,7 +11,13 @@ class Todo with ChangeNotifier {
   String title;
   DateTime dueDate;
   bool isCompleted;
+  RecurrenceMode recurrenceMode;
 
-  Todo({@required this.id, @required this.title, this.dueDate, this.isCompleted = false});
-  
+  Todo({
+    @required this.id,
+    @required this.title,
+    this.dueDate,
+    this.isCompleted = false,
+    this.recurrenceMode,
+  });
 }
